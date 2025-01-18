@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockMarket - Web3 Merchandise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BlockMarket</h1>
+        <p>Your One-Stop Shop for Web3 and Blockchain Merchandise</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="path-to-hardware-wallet-image.png" alt="Hardware Wallet">
+                    <h3>Hardware Wallet</h3>
+                    <p>Secure your crypto with the latest hardware wallet technology.</p>
+                    <p><strong>$150.00</strong></p>
+                    <button onclick="addToCart('Hardware Wallet', 150)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="path-to-tshirt-image.png" alt="Blockchain T-Shirt">
+                    <h3>Blockchain T-Shirt</h3>
+                    <p>High-quality cotton t-shirt with blockchain-themed designs.</p>
+                    <p><strong>$25.00</strong></p>
+                    <button onclick="addToCart('Blockchain T-Shirt', 25)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="path-to-btc-mining-cpu-image.png" alt="BTC Mining CPU">
+                    <h3>BTC Mining CPU</h3>
+                    <p>Powerful and efficient CPU for Bitcoin mining operations.</p>
+                    <p><strong>$450.00</strong></p>
+                    <button onclick="addToCart('BTC Mining CPU', 450)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="path-to-blockchain-mug-image.png" alt="Blockchain Mug">
+                    <h3>Blockchain Mug</h3>
+                    <p>Stylish mug with a Bitcoin logo and blockchain-themed design.</p>
+                    <p><strong>$15.00</strong></p>
+                    <button onclick="addToCart('Blockchain Mug', 15)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="path-to-blockchain-poster-image.png" alt="Blockchain Poster">
+                    <h3>Blockchain Poster</h3>
+                    <p>Decorate your space with a blockchain-inspired poster.</p>
+                    <p><strong>$10.00</strong></p>
+                    <button onclick="addToCart('Blockchain Poster', 10)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="path-to-crypto-sticker-pack-image.png" alt="Crypto Sticker Pack">
+                    <h3>Crypto Sticker Pack</h3>
+                    <p>A pack of 10 stickers featuring popular cryptocurrency logos.</p>
+                    <p><strong>$8.00</strong></p>
+                    <button onclick="addToCart('Crypto Sticker Pack', 8)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <div class="cart-container">
+                <ul id="cart-items"></ul>
+                <p id="total-price">Total: $0.00</p>
+                <button id="checkout-button" onclick="checkout()">Checkout with XION</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 BlockMarket. Powered by XION.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
